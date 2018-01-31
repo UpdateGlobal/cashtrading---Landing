@@ -1,9 +1,47 @@
+<?php
+   //Reseteamos variables a 0.
+   $nombre = $asunto = $correo = $telefono = $para = $headers = $msjCorreo = NULL;
+
+   if (isset($_POST['submit'])) {
+      //Obtenemos valores input formulario
+      $nombre = $_POST['nombre'];
+      $asunto = $_POST['asunto'];
+      $correo = $_POST['correo'];   
+      $telefono = $_POST['telefono'];
+      $para = 'blacksk81@gmail.com';
+
+      //Creamos cabecera.
+      $headers = 'From' . " " . $nombre . "\r\n";
+      $headers .= "Este Correo llega Directo desde la Pagina web";
+
+      //Componemos cuerpo correo.
+      $msjCorreo = "Nombre: " . $nombre;
+      $msjCorreo .= "\r\n";
+      $msjCorreo .= "Asunto: " . $asunto;
+      $msjCorreo .= "\r\n";
+      $msjCorreo .= "Asunto: " . $correo;
+      $msjCorreo .= "\r\n";
+      $msjCorreo .= "Telefono: " . $telefono;
+      $msjCorreo .= "\r\n";
+
+    if (mail($para, $correo, $msjCorreo, $headers) ) {
+         echo "<script language='javascript'>
+            alert('Mensaje enviado, muchas gracias.');
+         </script>";
+    } else {
+         echo "<script language='javascript'>
+            alert('fallado');
+         </script>";
+    }
+  }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-  <title>Luis Bernal</title>
+  <title>CashTraidingPeru</title>
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -49,25 +87,37 @@
         <span class="black-text email">Solo llenas tus Datos</span>
         </div>
     </li>
+<form action="index.php" method="POST">   
     <li style="margin-left: 10px; margin-right: 10px;">      
       <label for="first_name" class="black-text">Nombres Apellido</label>
-      <input placeholder="Ingresa Nombre" id="first_name" type="text">
+      <input placeholder="Ingresa Nombre" id="nombre" type="text" name="nombre" required>
     </li>
     <li style="margin-left: 10px; margin-right: 10px;">      
+        <div class="input-field">
+          <select name="asunto" id="asunto" required>
+            <option value="" disabled selected>Elige</option>
+            <option value="Escuala de traiding" style="font-size: 12px;">Escuala de traiding</option>
+            <option value="Compra Y Venta de Btc" style="font-size: 12px;">Compra Y Venta de Btc</option>
+            <option value="NifCoin" style="font-size: 12px;">NifCoin</option>
+          </select>
+          <label>Quieres saber</label>
+        </div>
+    </li>
+        <li style="margin-left: 10px; margin-right: 10px;">      
       <label for="first_name" class="black-text">Correo</label>
-      <input placeholder="Ingresa Correo" id="first_name" type="text">
+      <input placeholder="Ingresa Correo" id="correo" type="text" name="correo" required>
     </li>
     <li style="margin-left: 10px; margin-right: 10px;">      
       <label for="first_name" class="black-text">Telefono</label>
-      <input placeholder="Ingresa Numero" id="first_name" type="text">
+      <input placeholder="Ingresa Numero" id="telefono" type="text" name="telefono" required>
     </li>
-    <li style="margin-left: 10px; margin-right: 10px;">      
-      <label for="first_name" class="black-text">Direccion</label>
-      <input placeholder="Ingresa Donde vives" id="first_name" type="text">
-    </li>
-     <li style="margin-left: 10px; margin-right: 10px;">      
-      <button class="btn black-text" type="submit">Informame</button>
-    </li>
+     <li style="margin-left: 10px; margin-right: 10px;"> 
+
+     <input type="submit" name="submit" id="submit" class="btn black-text" value="Informame" required> 
+
+     <!--  <button class="btn black-text" type="submit">Informame</button> -->
+    </li> 
+</form>    
   </ul>
 
  <!--slideformmovil-->
@@ -82,21 +132,33 @@
             <div class="col s2 input-field">
               <img src="img/logo.svg" style="width: 70%; height: 70%; padding-top: 10px;">
             </div>
-            <div class="col s4 input-field"> 
+    <form action="index.php" method="POST">
+            <div class="col s2 input-field"> 
               <label for="first_name" class="white-text">Nombres Apellido</label>
-              <input placeholder="" id="first_name" type="text">
+              <input placeholder="" id="nombre" type="text" name="nombre" required>
             </div>
-            <div class="col s2 input-field">  
+              <div class="col s2 input-field">  
+                <label for="first_name" class="white-text" style="margin-top: -30px;">Quieres saber</label>
+                  <select name="asunto" id="asunto" required>
+                    <option value="" disabled selected></option>
+                    <option value="Escuala de traiding" class="black-text">Escuala de traiding</option>
+                    <option value="Compra Y Venta de Btc">Compra Y Venta de Btc</option>
+                    <option value="NifCoin">NifCoin</option>
+                  </select>
+             </div>
+             <div class="col s2 input-field">  
               <label for="first_name" class="white-text">Correo</label>
-              <input placeholder="" id="first_name" type="text">
+              <input placeholder="" id="correo" type="text" name="correo" required>
             </div>
             <div class="col s2 input-field">  
               <label for="first_name" class="white-text">Telefono</label>
-              <input placeholder="" id="first_name" type="text">
+              <input placeholder="" id="telefono" type="text" name="telefono" required>
             </div>
             <div class="col s2 input-field"> 
-              <button class="btn white-text" type="submit">Informame</button>
+            
+     <input type="submit" name="submit" id="submit" class="btn white-text" value="Informame"> 
             </div>
+    </form>
           </div>
       </div>
     </nav>
