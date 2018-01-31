@@ -55,10 +55,10 @@
     <a class="btn-floating btn-large">
       <i class="material-icons">menu</i>
     </a>
-    <ul>
-      <li><a class="btn-floating " style="background-color: #ab47bc"><i class="material-icons">attach_money</i></a></li>
-      <li><a class="btn-floating " style="background-color: #8e24aa"><i class="material-icons">trending_up</i></a></li>
-      <li><a class="btn-floating " style="background-color: #6a1b9a"><i class="material-icons">payment</i></a></li>
+   <ul>
+      <li><a class="btn-floating tooltipped" data-position="left" data-delay="50" data-tooltip="Compra y Venta" style="background-color: #ab47bc"><i class="material-icons">attach_money</i></a></li>
+      <li><a class="btn-floating tooltipped" data-position="left" data-delay="50" data-tooltip="Negocios" style="background-color: #8e24aa"><i class="material-icons">trending_up</i></a></li>
+      <li><a class="btn-floating tooltipped" data-position="left" data-delay="50" data-tooltip="Escuela de Traiding" style="background-color: #6a1b9a"><i class="material-icons">payment</i></a></li>
     </ul>
   </div>
 
@@ -96,7 +96,7 @@
         <div class="input-field">
           <select name="asunto" id="asunto" required>
             <option value="" disabled selected>Elige</option>
-            <option value="Escuala de traiding" style="font-size: 12px;">Escuala de traiding</option>
+            <option value="Escuela de traiding" style="font-size: 12px;">Escuela de traiding</option>
             <option value="Compra Y Venta de Btc" style="font-size: 12px;">Compra Y Venta de Btc</option>
             <option value="NifCoin" style="font-size: 12px;">NifCoin</option>
           </select>
@@ -141,7 +141,7 @@
                 <label for="first_name" class="white-text" style="margin-top: -30px;">Quieres saber</label>
                   <select name="asunto" id="asunto" required>
                     <option value="" disabled selected></option>
-                    <option value="Escuala de traiding" class="black-text">Escuala de traiding</option>
+                    <option value="Escuela de traiding" class="black-text">Escuela de traiding</option>
                     <option value="Compra Y Venta de Btc">Compra Y Venta de Btc</option>
                     <option value="NifCoin">NifCoin</option>
                   </select>
@@ -170,23 +170,28 @@
 
 
 
-
 <!--slider-->
 <div class="slider">
+  <img src="img/slide1.jpg" class="responsive-img"> 
     <ul class="slides">
       <li>
-        <img src="img/slide1.jpg" class="responsive-img"> 
-        <div class="caption right-align">
-          <h3 class="thin">Lorem ipsum dolor sit amet.</h3>
-          <h5 class="light grey-text text-lighten-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        <div class="caption left-align">
+          <h3 class="thin white-text">1 Lorem ipsum dolor sit amet.</h3>
+          <h5 class="light white-text text-lighten-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
           tempor incididunt ut labore et dolore magna aliqua. </h5>
         </div>
       </li>
-      <li>
-        <img src="img/slide2.jpg" class="responsive-img"> 
+       <li>
+        <div class="caption top-align">
+          <h3 class="thin white-text">2 Lorem ipsum dolor sit amet.</h3>
+          <h5 class="light white-text text-lighten-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. </h5>
+        </div>
+      </li>
+       <li>
         <div class="caption right-align">
-          <h3 class="thin black-text">Lorem ipsum dolor sit amet.</h3>
-          <h5 class="light black-text text-lighten-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          <h3 class="thin white-text">3 Lorem ipsum dolor sit amet.</h3>
+          <h5 class="light white-text text-lighten-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
           tempor incididunt ut labore et dolore magna aliqua. </h5>
         </div>
       </li>

@@ -55,10 +55,10 @@
     <a class="btn-floating btn-large">
       <i class="material-icons">menu</i>
     </a>
-    <ul>
-      <li><a class="btn-floating " style="background-color: #ab47bc"><i class="material-icons">attach_money</i></a></li>
-      <li><a class="btn-floating " style="background-color: #8e24aa"><i class="material-icons">trending_up</i></a></li>
-      <li><a class="btn-floating " style="background-color: #6a1b9a"><i class="material-icons">payment</i></a></li>
+   <ul>
+      <li><a class="btn-floating tooltipped" data-position="left" data-delay="50" data-tooltip="Compra y Venta" style="background-color: #ab47bc"><i class="material-icons">attach_money</i></a></li>
+      <li><a class="btn-floating tooltipped" data-position="left" data-delay="50" data-tooltip="Negocios" style="background-color: #8e24aa"><i class="material-icons">trending_up</i></a></li>
+      <li><a class="btn-floating tooltipped" data-position="left" data-delay="50" data-tooltip="Escuela de Traiding" style="background-color: #6a1b9a"><i class="material-icons">payment</i></a></li>
     </ul>
   </div>
 
@@ -96,7 +96,7 @@
         <div class="input-field">
           <select name="asunto" id="asunto" required>
             <option value="" disabled selected>Elige</option>
-            <option value="Escuala de traiding" style="font-size: 12px;">Escuala de traiding</option>
+            <option value="Escuela de traiding" style="font-size: 12px;">Escuela de traiding</option>
             <option value="Compra Y Venta de Btc" style="font-size: 12px;">Compra Y Venta de Btc</option>
             <option value="NifCoin" style="font-size: 12px;">NifCoin</option>
           </select>
@@ -141,7 +141,7 @@
                 <label for="first_name" class="white-text" style="margin-top: -30px;">Quieres saber</label>
                   <select name="asunto" id="asunto" required>
                     <option value="" disabled selected></option>
-                    <option value="Escuala de traiding" class="black-text">Escuala de traiding</option>
+                    <option value="Escuela de traiding" class="black-text">Escuela de traiding</option>
                     <option value="Compra Y Venta de Btc">Compra Y Venta de Btc</option>
                     <option value="NifCoin">NifCoin</option>
                   </select>
