@@ -172,32 +172,31 @@
 
 
 <!--slider-->
-<div class="slider">
-  <img src="img/slide1.jpg" class="responsive-img"> 
+  <div class="slider fullscreen">
     <ul class="slides">
       <li>
-        <div class="caption left-align">
-          <h3 class="thin white-text">1 Lorem ipsum dolor sit amet.</h3>
-          <h5 class="light white-text text-lighten-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. </h5>
-        </div>
-      </li>
-       <li>
-        <div class="caption top-align">
-          <h3 class="thin white-text">2 Lorem ipsum dolor sit amet.</h3>
-          <h5 class="light white-text text-lighten-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. </h5>
-        </div>
-      </li>
-       <li>
+        <img src="img/slide1.jpg"> <!-- random image -->
         <div class="caption right-align">
-          <h3 class="thin white-text">3 Lorem ipsum dolor sit amet.</h3>
-          <h5 class="light white-text text-lighten-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. </h5>
+          <h3 class="thin" style="color: #8e24aa;">This is our big Tagline!</h3>
+          <h5 class="light text-lighten-3" style="color: #8e24aa;">Here's our small slogan.</h5>
+        </div>
+      </li>
+       <li>
+        <img src="img/slide1.jpg"> <!-- random image -->
+        <div class="caption right-align">
+          <h3 class="thin" style="color: #8e24aa;">This is our big Tagline!</h3>
+          <h5 class="light text-lighten-3" style="color: #8e24aa;">Here's our small slogan.</h5>
+        </div>
+      </li>
+       <li>
+        <img src="img/slide1.jpg"> <!-- random image -->
+        <div class="caption right-align">
+          <h3 class="thin" style="color: #8e24aa;">This is our big Tagline!</h3>
+          <h5 class="light text-lighten-3" style="color: #8e24aa;">Here's our small slogan.</h5>
         </div>
       </li>
     </ul>
-  </div>   
+  </div> 
 <!--slider-->
 
 
@@ -265,7 +264,7 @@
         $('select').material_select();
         $('.slider').slider({
           indicators: false,
-          height: 600
+          height: 100
         });
         $(".button-collapse").sideNav();
 
