@@ -204,15 +204,15 @@
     <h3 class="thin">En este Seminario Aprenderás a:</h3>
         <div class="row">
           <div class="col s4">
-            <i class="material-icons" style="font-size: 92px;">attach_money</i>
+           <i class="fas fa-chart-line" style="font-size: 92px;"></i>
             <p class="thin">Analizar indicadores  en mercados financieros digitales para rentabilizar</p>
           </div>
           <div class="col s4">
-          <i class="material-icons" style="font-size: 92px;">attach_money</i>
-            <p class="thin"> Estrategias, Riesgos y mejores prácticas</p>         
+          <i class="fas fa-bullseye" style="font-size: 92px;"></i>
+            <p class="thin"> Crear Estrategias, Minimizar Riesgos y las mejores prácticas</p>         
           </div>
           <div class="col s4">
-            <i class="material-icons" style="font-size: 92px;">attach_money</i>
+            <i class="fab fa-btc" style="font-size: 92px;"></i>
              <p class="thin">Operaciones, sistemas y uso de plataformas de trading</p>
           </div>
         </div>
@@ -223,7 +223,7 @@
 <div class="" style="background-image: url(img/tipolaptop.png); background-repeat: no-repeat; " >
   <div class="row" align="right">
     <div class="col s6 offset-s6 " style="padding-right: 5%;margin-top: 10%;margin-bottom: 10%;">
-       <h4 class="thin" style="padding-top: 25%; padding-bottom: 5%;">Solo podras realizar tus sueños,  si cuando llegan sabes estar despierto.</h4>
+       <h4 class="thin" style="padding-top: 20%; padding-bottom: 5%;">Solo podras realizar tus sueños,  si cuando llegan sabes estar despierto.</h4>
     </div>
   </div>
 </div>
