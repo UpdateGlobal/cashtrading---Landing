@@ -8,7 +8,7 @@
       $asunto = $_POST['asunto'];
       $correo = $_POST['correo'];   
       $telefono = $_POST['telefono'];
-      $para = 'blacksk81@gmail.com';
+      $para = 'cashtrading2018@gmail.com';
 
       //Creamos cabecera.
       $headers = 'From' . " " . $nombre . "\r\n";
@@ -42,6 +42,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
   <title>Seminario Internacional de Economía Colaborativa</title>
+  <link id="favicon" rel="shortcut icon" href="img/icon.png"  />
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -93,9 +94,8 @@
         <div class="input-field">
           <select name="asunto" id="asunto" required>
             <option value="" disabled selected>Elige</option>
-            <option value="Escuela de traiding" style="font-size: 12px;">Escuela de traiding</option>
-            <option value="Compra Y Venta de Btc" style="font-size: 12px;">Compra Y Venta de Btc</option>
-            <option value="NifCoin" style="font-size: 12px;">NifCoin</option>
+            <option value="Escuela de traiding" style="font-size: 12px;">Escuela de trading</option>
+            <option value="Compra Y Venta de Btc" style="font-size: 12px;">Compra Y Venta</option>
           </select>
           <label>Quieres saber</label>
         </div>
@@ -138,9 +138,8 @@
                 <label for="first_name" class="white-text thin" style="margin-top: -34px; font-size: 12px;">Quieres saber</label>
                   <select name="asunto" id="asunto" required>
                     <option value="" disabled selected></option>
-                    <option value="Escuela de traiding" class="black-text">Escuela de traiding</option>
+                    <option value="Escuela de traiding" class="black-text">Escuela de trading</option>
                     <option value="Compra Y Venta de Btc">Compra Y Venta de Btc</option>
-                    <option value="NifCoin">NifCoin</option>
                   </select>
              </div>
              <div class="col s2 input-field">  
@@ -202,6 +201,7 @@
 <div class="container">
   <div class="col s12 white-text" style="">
     <h3 class="thin">En este Seminario Aprenderás a:</h3>
+    <br><br>
         <div class="row">
           <div class="col s4">
            <i class="fas fa-chart-line" style="font-size: 92px;"></i>
@@ -228,6 +228,39 @@
   </div>
 </div>
 
+
+
+<?php
+   //Reseteamos variables a 0.
+   $suscriptor  = NULL;
+
+   if (isset($_POST['submit'])) {
+      //Obtenemos valores input formulario
+      $suscriptor = $_POST['suscriptor'];
+      $para = 'cashtrading2018@gmail.com';
+
+      //Creamos cabecera.
+      $headers = 'From' . " " . $suscriptor . "\r\n";
+      $headers .= "Este Correo es para agregar un nuevo Suscriptor al boletin informativo";
+
+      //Componemos cuerpo correo.
+      $msjCorreo = "Suscriptor: " . $suscriptor;
+
+
+    if (mail($para, $correo, $msjCorreo, $headers) ) {
+         echo "<script language='javascript'>
+            alert('Mensaje enviado, muchas gracias.');
+         </script>";
+    } else {
+         echo "<script language='javascript'>
+            alert('fallado');
+         </script>";
+    }
+  }
+?>
+
+
+
 <div class="" style="background-color: #2f1448;">
   <div class="row container vertical">
     <div class="col l6 m6 white-text" style="padding-top: 11%;">
@@ -237,10 +270,10 @@
     <div class="col l6 m6 white-text" style="padding-bottom: 12%; padding-top: 12%;">
         <form action="">
               <div class="input-field" style="font-size: 2rem;">
-                <input placeholder="Correo" id="first_name" type="text" class="validate">
+                <input placeholder="Correo" id="first_name" type="text" class="validate" name="suscriptor">
               </div>
               <div class="input-field">
-              <button class="btn" type="submit">Inscribirme</button>
+               <input type="submit" name="submit" id="submit" class="btn black-text" value="Inscribirme" required> 
             </div>
         </form>
     </div>

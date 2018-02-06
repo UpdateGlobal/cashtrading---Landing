@@ -41,25 +41,23 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-  <title>CashTraidingPeru</title>
+  <title>Compra y Vende </title>
+  <link id="favicon" rel="shortcut icon" href="img/icon.png"  />
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 </head>
 <body>
 
 
-  <div class="fixed-action-btn Vertical click-to-toggle">
-    <a class="btn-floating btn-large">
-      <i class="material-icons">menu</i>
+ 
+  <div class="fixed-action-btn">
+    <a class="btn-floating btn-large" target="new" href="https://api.whatsapp.com/send?phone=51960604643&text=Me%20gustaria%20Información%20sobre%20el%20Seminario">
+      <i class="fab fa-whatsapp fa-3x" style="margin: 6px 0px 0px;"></i>
     </a>
-   <ul>
-      <li><a class="btn-floating tooltipped" data-position="left" data-delay="50" data-tooltip="Compra y Venta" style="background-color: #ab47bc"><i class="material-icons">attach_money</i></a></li>
-      <li><a class="btn-floating tooltipped" data-position="left" data-delay="50" data-tooltip="Negocios" style="background-color: #8e24aa"><i class="material-icons">trending_up</i></a></li>
-      <li><a class="btn-floating tooltipped" data-position="left" data-delay="50" data-tooltip="Escuela de Traiding" style="background-color: #6a1b9a"><i class="material-icons">payment</i></a></li>
-    </ul>
   </div>
 
 
@@ -82,7 +80,7 @@
 <ul id="slide-out" class="side-nav">
     <li>
         <div class="user-view">
-        <img  src="img/logo.svg" style="width: 50%; height: 50%;" >
+        <img  src="img/logo.svg" style="width: 50%; height: 50%;" class="responsive-img" >
         <span class="black-text name">Podemos Informarte</span>
         <span class="black-text email">Solo llenas tus Datos</span>
         </div>
@@ -96,9 +94,8 @@
         <div class="input-field">
           <select name="asunto" id="asunto" required>
             <option value="" disabled selected>Elige</option>
-            <option value="Escuela de traiding" style="font-size: 12px;">Escuela de traiding</option>
-            <option value="Compra Y Venta de Btc" style="font-size: 12px;">Compra Y Venta de Btc</option>
-            <option value="NifCoin" style="font-size: 12px;">NifCoin</option>
+            <option value="Escuela de traiding" style="font-size: 12px;">Escuela de trading</option>
+            <option value="Compra Y Venta de Btc" style="font-size: 12px;">Compra Y Venta</option>
           </select>
           <label>Quieres saber</label>
         </div>
@@ -108,7 +105,7 @@
       <input placeholder="Ingresa Correo" id="correo" type="text" name="correo" required>
     </li>
     <li style="margin-left: 10px; margin-right: 10px;">      
-      <label for="first_name" class="black-text">Telefono</label>
+      <label for="first_name" class="black-text">Teléfono</label>
       <input placeholder="Ingresa Numero" id="telefono" type="text" name="telefono" required>
     </li>
      <li style="margin-left: 10px; margin-right: 10px;"> 
@@ -130,28 +127,27 @@
         <a class="brand-logo que"> <a href="#" data-activates="slide-out" class="button-collapse que">Podemos Informarte</a></a>
           <div class="row hide-on-med-and-down">
             <div class="col s2 input-field">
-              <img src="img/logo.svg" style="width: 70%; height: 70%; padding-top: 10px;">
+              <img src="img/logo.png" style="width: 70%; height: 70%; padding-top: 10px;">
             </div>
     <form action="index.php" method="POST">
             <div class="col s2 input-field"> 
-              <label for="first_name" class="white-text">Nombres Apellido</label>
-              <input placeholder="" id="nombre" type="text" name="nombre" required>
+              <label for="first_name" class="white-text thin">Nombres Apellido</label>
+              <input placeholder="" id="nombre" type="text" name="nombre" required place>
             </div>
               <div class="col s2 input-field">  
-                <label for="first_name" class="white-text" style="margin-top: -30px;">Quieres saber</label>
+                <label for="first_name" class="white-text thin" style="margin-top: -34px; font-size: 12px;">Quieres saber</label>
                   <select name="asunto" id="asunto" required>
-                    <option value="" disabled selected></option>
-                    <option value="Escuela de traiding" class="black-text">Escuela de traiding</option>
-                    <option value="Compra Y Venta de Btc">Compra Y Venta de Btc</option>
-                    <option value="NifCoin">NifCoin</option>
+                    <option value="" disabled selected></option> 
+                    <option value="Compra Y Venta de Btc">Compra Y Venta</option>
+                    <option value="Escuela de traiding" class="black-text">Escuela de trading</option>
                   </select>
              </div>
              <div class="col s2 input-field">  
-              <label for="first_name" class="white-text">Correo</label>
+              <label for="first_name" class="white-text thin">Correo</label>
               <input placeholder="" id="correo" type="text" name="correo" required>
             </div>
             <div class="col s2 input-field">  
-              <label for="first_name" class="white-text">Telefono</label>
+              <label for="first_name" class="white-text thin">Teléfono</label>
               <input placeholder="" id="telefono" type="text" name="telefono" required>
             </div>
             <div class="col s2 input-field"> 
@@ -169,66 +165,101 @@
 
 
 
-
-<!--slider-->
-  <div class="slider fullscreen">
+  <div class="slider">
     <ul class="slides">
       <li>
-        <img src="img/buycoin.jpg"> <!-- random image -->
+        <img src="img/slide1.1.jpg"> <!-- random image -->
         <div class="caption right-align">
-          <h3 class="thin" style="color: #ffffff;">This is our big Tagline!</h3>
-          <h5 class="light text-lighten-3" style="color: #ffffff;">Here's our small slogan.</h5>
+          <h3 class="texth3">COMPRA Y VENDE DE MANERA SEGURA</h3>
+          <h5 class="light text-lighten-3 texth5">Con el respaldo de una empresa internacional</h5>
+          <a class="waves-effect waves-light btn"><i class="material-icons left">phone</i>+51960604643</a>
         </div>
       </li>
-       <li>
-        <img src="img/buycoin.jpg"> <!-- random image -->
+         <li>
+        <img src="img/slide2.2.jpg"> <!-- random image -->
         <div class="caption right-align">
-          <h3 class="thin" style="color: #ffffff;">This is our big Tagline!</h3>
-          <h5 class="light text-lighten-3" style="color: #ffffff;">Here's our small slogan.</h5>
+          <h3 class="texth3">PAGO EN EFECTIVO Y TRATO DIRECTO</h3>
+          <h5 class="light text-lighten-3 texth5">Todas nuestras transacciónes son realizadas en nuestras oficinas</h5>
+          <a class="waves-effect waves-light btn"><i class="material-icons left">phone</i>+51960604643</a>
         </div>
       </li>
-       <li>
-        <img src="img/buycoin.jpg"> <!-- random image -->
+          <li>
+        <img src="img/slide3.3.jpg"> <!-- random image -->
         <div class="caption right-align">
-          <h3 class="thin" style="color: #ffffff;">This is our big Tagline!</h3>
-          <h5 class="light text-lighten-3" style="color: #ffffff;">Here's our small slogan.</h5>
+          <h3 class="texth3">LA COMISIÓN MÁS BAJA DEL MERCADO</h3>
+          <h5 class="light text-lighten-3 texth5"></h5>
+          <a class="waves-effect waves-light btn"><i class="material-icons left">phone</i>+51960604643</a>
         </div>
       </li>
     </ul>
-  </div> 
-<!--slider-->
+  </div>
 
 
-<div class="row" style="background-color: #2f1448;" align="center">
-  <div class="col s12 white-text" style="padding-bottom: 12%; padding-top: 12%;">
-    <h3 class="thin">Aqui va un titulo</h3>
+
+<div class="row" style="background-color: #2f1448; padding-bottom: 50px; padding-top: 50px;" align="center">
+
+<div class="container">
+  <div class="col s12 white-text" style="">
+    <h3 class="thin">Cash Trading Ofrece:</h3>
+    <br><br>
         <div class="row">
           <div class="col s4">
-            <i class="material-icons" style="font-size: 92px;">attach_money</i>
-            <h5 class="thin">Aqui va un titulo</h5>
-            <p class="thin">loren Ipsum temas de descricpcion aparafrasear lo que de dice el loco</p>
+         <i class="far fa-thumbs-up" style="font-size: 75px;"></i>
+            <p class="thin" style="font-size: 28px;">Seguridad</p>
           </div>
           <div class="col s4">
-          <i class="material-icons" style="font-size: 92px;">attach_money</i>
-            <h5 class="thin">Aqui va un titulo</h5>
-            <p class="thin">loren Ipsum temas de descricpcion aparafrasear lo que de dice el loco</p>
+            <i class="fab fa-black-tie" style="font-size: 75px;"></i>
+             <p class="thin" style="font-size: 28px;">Profesionalismo</p>
           </div>
           <div class="col s4">
-            <i class="material-icons" style="font-size: 92px;">attach_money</i>
-            <h5 class="thin">Aqui va un titulo</h5>
-            <p class="thin">loren Ipsum temas de descricpcion aparafrasear lo que de dice el loco</p>
+          <i class="fas fa-handshake" style="font-size: 75px;"></i>
+            <p class="thin" style="font-size: 28px;">Confianza</p>         
           </div>
         </div>
   </div>
+</div>
 </div>
 
 <div class="" style="background-image: url(img/tipolaptop.png); background-repeat: no-repeat; " >
   <div class="row" align="right">
     <div class="col s6 offset-s6 " style="padding-right: 5%;margin-top: 10%;margin-bottom: 10%;">
-       <h4 class="thin" style="padding-top: 25%; padding-bottom: 5%;">Solo podras realizar tus sueños,  si cuando llegan sabes estar despierto.</h4>
+       <h4 class="thin" style="padding-top: 20%; padding-bottom: 5%;">Solo podras realizar tus sueños,  si cuando llegan sabes estar despierto.</h4>
     </div>
   </div>
 </div>
+
+
+
+<?php
+   //Reseteamos variables a 0.
+   $suscriptor  = NULL;
+
+   if (isset($_POST['submit'])) {
+      //Obtenemos valores input formulario
+      $suscriptor = $_POST['suscriptor'];
+      $para = 'cashtrading2018@gmail.com';
+
+      //Creamos cabecera.
+      $headers = 'From' . " " . $suscriptor . "\r\n";
+      $headers .= "Este Correo es para agregar un nuevo Suscriptor al boletin informativo";
+
+      //Componemos cuerpo correo.
+      $msjCorreo = "Suscriptor: " . $suscriptor;
+
+
+    if (mail($para, $correo, $msjCorreo, $headers) ) {
+         echo "<script language='javascript'>
+            alert('Mensaje enviado, muchas gracias.');
+         </script>";
+    } else {
+         echo "<script language='javascript'>
+            alert('fallado');
+         </script>";
+    }
+  }
+?>
+
+
 
 <div class="" style="background-color: #2f1448;">
   <div class="row container vertical">
@@ -239,19 +270,41 @@
     <div class="col l6 m6 white-text" style="padding-bottom: 12%; padding-top: 12%;">
         <form action="">
               <div class="input-field" style="font-size: 2rem;">
-                <input placeholder="Correo" id="first_name" type="text" class="validate">
+                <input placeholder="Correo" id="first_name" type="text" class="validate" name="suscriptor">
               </div>
               <div class="input-field">
-              <button class="btn" type="submit">Inscribir</button>
+               <input type="submit" name="submit" id="submit" class="btn black-text" value="Inscribirme" required> 
             </div>
         </form>
     </div>
   </div>
 </div>
 
-<div class="row container">
-  <div class="col l6 m6 s6">Todos los Derechos Reservados 2018</div>
-</div>
+
+        <footer class="page-footer">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Orzaniza</h5>
+                <p class="grey-text text-lighten-4">Cash Trading International</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                          <img src="img/logo.png" style="width: 50%; height: 50%; margin-top: 13px;" class="responsive-img" >
+
+        
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+        Dirección:   Bartolomé Trujillo 432 Miraflores 
+Alt. 11 de Benavidess
+            <a class="grey-text text-lighten-4 right" href="#!">
+   © 2018 Copyright Cash Trading International</a>
+            </div>
+          </div>
+        </footer
+
 
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
