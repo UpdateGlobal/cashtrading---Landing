@@ -5231,12 +5231,14 @@ small {
     line-height: 8px;
     padding: 0;
     border-radius: 5px;
+    color: chartreuse;
+    background-color: aliceblue;
 }
 
 .btn-floating:hover {
-  /*
+  
   background-color: #26a69a;
-  */
+  
 }
 
 .btn-floating:before {
@@ -6101,7 +6103,7 @@ input[type=tel]:not(.browser-default):focus:not([readonly]) + label,
 input[type=number]:not(.browser-default):focus:not([readonly]) + label,
 input[type=search]:not(.browser-default):focus:not([readonly]) + label,
 textarea.materialize-textarea:focus:not([readonly]) + label {
-  color: #26a69a;
+  color: #ffffff;
 }
 
 input:not([type]).validate + label,
@@ -6234,9 +6236,9 @@ input[type=search].invalid:not(.browser-default),
 input[type=search].invalid:not(.browser-default):focus,
 textarea.materialize-textarea.invalid,
 textarea.materialize-textarea.invalid:focus, .select-wrapper.invalid > input.select-dropdown {
-  border-bottom: 1px solid #F44336;
-  -webkit-box-shadow: 0 1px 0 0 #F44336;
-          box-shadow: 0 1px 0 0 #F44336;
+  border-bottom: 1px solid #ba06ff;
+  -webkit-box-shadow: 0 1px 0 0 #ba06ff;
+          box-shadow: 0 1px 0 0 #ba06ff;
 }
 
 input:not([type]).valid + label:after,
@@ -7022,7 +7024,7 @@ select {
 .select-wrapper span.caret {
     position: absolute;
     right: 0;
-    top: -36px;
+    top: -62px;
     bottom: 0;
     height: 10px;
     margin: auto 0;

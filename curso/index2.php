@@ -1,14 +1,14 @@
 <?php
    //Reseteamos variables a 0.
-   $nombre = $telefono = $asunto = $correo = $para = $headers = $msjCorreo = NULL;
+   $nombre = $asunto = $correo = $telefono = $para = $headers = $msjCorreo = NULL;
 
    if (isset($_POST['submit'])) {
       //Obtenemos valores input formulario
       $nombre = $_POST['nombre'];
+      $asunto = $_POST['asunto'];
+      $correo = $_POST['correo'];   
       $telefono = $_POST['telefono'];
-      $asunto = $_POST['asunto'];   
-      $correo = $_POST['correo'];
-      $para = 'cashtrading2018@gmail.com';
+      $para = 'blacksk81@gmail.com';
 
       //Creamos cabecera.
       $headers = 'From' . " " . $nombre . "\r\n";
@@ -17,11 +17,11 @@
       //Componemos cuerpo correo.
       $msjCorreo = "Nombre: " . $nombre;
       $msjCorreo .= "\r\n";
-      $msjCorreo .= "telefono: " . $telefono;
-      $msjCorreo .= "\r\n";
       $msjCorreo .= "Asunto: " . $asunto;
       $msjCorreo .= "\r\n";
-      $msjCorreo .= "Correo: " . $correo;
+      $msjCorreo .= "Asunto: " . $correo;
+      $msjCorreo .= "\r\n";
+      $msjCorreo .= "Telefono: " . $telefono;
       $msjCorreo .= "\r\n";
 
    if (mail($para, $correo, $msjCorreo, $headers) ) {
@@ -44,7 +44,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-  <title>Compra y Vende </title>
+  <title>Seminario Internacional de Economía Colaborativa</title>
   <link id="favicon" rel="shortcut icon" href="img/icon.png"  />
 
   <!-- CSS  -->
@@ -57,10 +57,9 @@
 
 
  
- 
   <div class="fixed-action-btn">
-    <a class="btn-floating tooltipped" target="new" data-position="left" data-delay="50" data-tooltip="Ws +51960604643" href="https://api.whatsapp.com/send?phone=51960604643&text=Me%20gustaria%20Información%20sobre%20el%20Seminario">
-      <i class="fab fa-whatsapp fa-3x" style="margin: 5px 10px 0px;"></i>
+    <a class="btn-floating tooltipped" target="new" data-position="left" data-delay="50" data-tooltip="+51960604643" href="https://api.whatsapp.com/send?phone=51960604643&text=Me%20gustaria%20Información%20sobre%20el%20Seminario">
+      <i class="fab fa-whatsapp fa-3x" style="margin: 5px -10px 0px;"></i>
     </a>
   </div>
 
@@ -114,59 +113,90 @@
     </li>
      <li style="margin-left: 10px; margin-right: 10px;"> 
 
-     <input type="submit" name="submit" id="submit" class="btn black-text" value="Informame" required> 
+     <input type="submit" name="submit" id="submit" class="btn black-text" value="Informame" > 
 
      <!--  <button class="btn black-text" type="submit">Informame</button> -->
     </li> 
 </form>    
   </ul>
 
-
  <!--slideformmovil-->
      
 <!--navbarform-->
 
   <div class="navbar-fixed">
-  <nav>
-    <div class="nav-wrapper">
-        <img src="img/logo.png" style="width: 10%; height: 70%; padding-top: 10px;">
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="#registrate">Registrate</a></li>
-      </ul>
-    </div>
-  </nav>
-</div>
-
+    <nav>
+      <div class="nav-wrapper" align="center">
+        <a class="brand-logo que"> <a href="#" data-activates="slide-out" class="button-collapse que">Inscribite Aquí</a></a>
+          <div class="row hide-on-med-and-down">
+            <div class="col s2 input-field">
+              <img src="img/logo.png" style="width: 70%; height: 70%; padding-top: 10px;">
+            </div>
+    <form action="index.php" method="POST">
+            <div class="col s2 input-field"> 
+              <label for="first_name" class="white-text thin">Ingresa Nombre y Apellido</label>
+              <input placeholder="" id="nombre" type="text" name="nombre" required place>
+            </div>
+              <div class="col s2 input-field">  
+                <label for="first_name" class="white-text thin" style="margin-top: -34px; font-size: 12px;">Quieres saber</label>
+                  <select name="asunto" id="asunto" required>
+                    <option value="" disabled selected></option>
+                    <option value="Escuela de traiding" class="black-text">Escuela de trading</option>
+                    <option value="Compra Y Venta de Btc">Compra Y Venta de Btc</option>
+                  </select>
+             </div>
+             <div class="col s2 input-field">  
+              <label for="first_name" class="white-text thin">Danos tu Correo</label>
+              <input placeholder="" id="correo" type="text" name="correo" required>
+            </div>
+            <div class="col s2 input-field">  
+              <label for="first_name" class="white-text thin">Deja tu Telefono</label>
+              <input placeholder="" id="telefono" type="text" name="telefono" required>
+            </div>
+            <div class="col s2 input-field"> 
+            
+     <input type="submit" name="submit" id="submit" class="btn white-text" value="Informame"> 
+            </div>
+    </form>
+          </div>
+      </div>
+    </nav>
+  </div>
 
 
 <!--navbarform-->
 
 
 
-  <div class="slider">
+  <div class="slider row">
     <ul class="slides">
+  
       <li>
-        <img src="img/slide1.1.jpg"> <!-- random image -->
-        <div class="caption right-align">
-          <h3 class="texth3">COMPRA Y VENDE DE MANERA SEGURA</h3>
-          <h5 class="light text-lighten-3 texth5">Con el respaldo de una empresa internacional</h5>
-          <a class="waves-effect waves-light btn"><i class="material-icons left">phone</i>+51960604643</a>
+        <img src="img/slide1.jpg"> <!-- random image -->
+        <div class="col l6 m12 s12  caption right-align">
+          <div class="chip">Seminario Internacional de Economía Colaborativa</div>
+          <h3 class="texth3">CONTROLA<br> Y HAZ CRECER TU DINERO</h3>
+          <h5 class="light text-lighten-3 texth5">Aprende todo acerca de <BR>  la nueva economía Colaborativa y digital</h5>
+          <a class="waves-effect waves-light btn"><i class="material-icons left">book</i>inscribete</a>
         </div>
       </li>
-         <li>
-        <img src="img/slide2.2.jpg"> <!-- random image -->
-        <div class="caption right-align">
-          <h3 class="texth3">PAGO EN EFECTIVO Y TRATO DIRECTO</h3>
-          <h5 class="light text-lighten-3 texth5">Todas nuestras transacciónes son realizadas en nuestras oficinas</h5>
-          <a class="waves-effect waves-light btn"><i class="material-icons left">phone</i>+51960604643</a>
+
+         
+      <li>
+        <img src="img/slide2.jpg"> <!-- random image -->
+        <div class="col l6 m12 s12  caption right-align">
+          <h3 class="texth3">CONTROLA<br> Y HAZ CRECER TU DINERO</h3>
+          <h5 class="light text-lighten-3 texth5">Aprende todo acerca de <BR>  la nueva economía Colaborativa y digital</h5>
+          <a class="waves-effect waves-light btn"><i class="material-icons left">book</i>inscribete</a>
         </div>
       </li>
-          <li>
-        <img src="img/slide3.3.jpg"> <!-- random image -->
-        <div class="caption right-align">
-          <h3 class="texth3">LA COMISIÓN MÁS BAJA DEL MERCADO</h3>
-          <h5 class="light text-lighten-3 texth5"></h5>
-          <a class="waves-effect waves-light btn"><i class="material-icons left">phone</i>+51960604643</a>
+
+      <li>
+        <img src="img/slide3.jpg"> <!-- random image -->
+        <div class="col l6 m12 s12  caption right-align ">
+          <h3 class="texth3">CONTROLA<br> Y HAZ CRECER TU DINERO</h3>
+          <h5 class="light text-lighten-3 texth5">Aprende todo acerca de <BR>  la nueva economía Colaborativa y digital</h5>
+          <a class="waves-effect waves-light btn"><i class="material-icons left">book</i>inscribete</a>
         </div>
       </li>
     </ul>
@@ -178,20 +208,20 @@
 
 <div class="container">
   <div class="col s12 white-text" style="">
-    <h3 class="thin">Cash Trading Ofrece:</h3>
+    <h3 class="thin">En este Seminario Aprenderás a:</h3>
     <br><br>
         <div class="row">
           <div class="col s4">
-         <i class="far fa-thumbs-up" style="font-size: 75px;"></i>
-            <p class="thin" style="font-size: 28px;">Seguridad</p>
+           <i class="fas fa-chart-line" style="font-size: 92px;"></i>
+            <p class="thin">Analizar indicadores  en mercados financieros digitales para rentabilizar</p>
           </div>
           <div class="col s4">
-            <i class="fab fa-black-tie" style="font-size: 75px;"></i>
-             <p class="thin" style="font-size: 28px;">Profesionalismo</p>
+          <i class="fas fa-bullseye" style="font-size: 92px;"></i>
+            <p class="thin"> Crear Estrategias, Minimizar Riesgos y las mejores prácticas</p>         
           </div>
           <div class="col s4">
-          <i class="fas fa-handshake" style="font-size: 75px;"></i>
-            <p class="thin" style="font-size: 28px;">Confianza</p>         
+            <i class="fab fa-btc" style="font-size: 92px;"></i>
+             <p class="thin">Operaciones, sistemas y uso de plataformas de trading</p>
           </div>
         </div>
   </div>
@@ -208,52 +238,44 @@
 
 
 
+<?php
+   //Reseteamos variables a 0.
+   $suscriptor  = NULL;
+
+   if (isset($_POST['submit'])) {
+      //Obtenemos valores input formulario
+      $suscriptor = $_POST['suscriptor'];
+      $para = 'cashtrading2018@gmail.com';
+
+      //Creamos cabecera.
+      $headers = 'From' . " " . $suscriptor . "\r\n";
+      $headers .= "Este Correo es para agregar un nuevo Suscriptor al boletin informativo";
+
+      //Componemos cuerpo correo.
+      $msjCorreo = "Suscriptor: " . $suscriptor;
+
+
+ 
+  }
+?>
 
 
 
-
-<div class="" style="background-color: #2f1448;" id="registrate">
+<div class="" style="background-color: #2f1448;">
   <div class="row container vertical">
     <div class="col l6 m6 white-text" style="padding-top: 11%;">
       <!---hola aqui no sabia que hace-->
-      <h3 class="thin">Registrate<p style="font-size: 10px;">Un asesor especializado se comunicará contigo</p></h3>
+      <h3 class="thin">Newsletters<p style="font-size: 10px;">Quieres recibir nuestras notificaciones</p></h3>
     </div>
     <div class="col l6 m6 white-text" style="padding-bottom: 12%; padding-top: 12%;">
-         <form class="col s12" action="index.php" method="POST">
-            <div class="row">
-              <div class="input-field col s6">
-                <input  id="first_name" type="text" class="validate" required name="nombre" id="nombre">
-                <label for="first_name" class="thin white-text" >Ingresa Nombre y Apellido  </label>
+        <form action="" id="formnews" name="formnews">
+              <div class="input-field" style="font-size: 2rem;">
+                <input placeholder="Correo" id="first_name" type="text" class="validate" name="suscriptor" required>
               </div>
-              <div class="input-field col s6">
-                <input  id="first_name" type="text" class="validate" required name="telefono" id="telefono">
-                <label for="first_name" class="thin white-text">Danos tu Teléfono</label>
-
-              </div>
+              <div class="input-field">
+               <input type="submit" name="submit" id="submit" class="btn black-text" value="Inscribirme" > 
             </div>
-
-            <div class="row">
-              <div class="input-field col s12" style="margin: 60px 0px -20px;">
-                      <select required name="asunto" id="asunto">
-                        <option value="" disabled selected class="thin"></option>
-                        <option value="Escuela de trading">Escuela de trading</option>
-                        <option value="Compra y Venta de Btc">Compra y Venta de Btc</option>
-                      </select>
-                      <label class="thin white-text">¿Que Quieres preguntarnos?</label>
-              </div>
-            </div>
-
-            <div class="row">
-
-                <div class="input-field col s12">
-                <input  id="first_name" type="text" class="validate" required name="correo" id="correo">
-                <label for="first_name" class="thin white-text">Podemos Tener tu Correo</label>
-
-              </div>
-
-     <input type="submit" name="submit" id="submit" class="btn white-text" value="Registrarme">
-            </div>
-          </form>
+        </form>
     </div>
   </div>
 </div>
@@ -267,7 +289,7 @@
                 <p class="grey-text text-lighten-4">Cash Trading International</p>
               </div>
               <div class="col l4 offset-l2 s12">
-                          <img src="img/logo.png" style="margin-top: 13px;" class="responsive-img" >
+                          <img src="img/logo.png" style="width: 50%; height: 50%; margin-top: 13px;" class="responsive-img" >
 
         
               </div>
@@ -296,7 +318,7 @@ Alt. 11 de Benavidess
           height: 600
         });
         $(".button-collapse").sideNav();
-                $('.tooltipped').tooltip({
+        $('.tooltipped').tooltip({
           delay: 50, });
 
       });
