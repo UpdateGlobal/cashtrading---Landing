@@ -150,7 +150,7 @@
           <div class="chip">Seminario Internacional de Economía Colaborativa</div>
           <h3 class="texth3">CONTROLA<br> Y HAZ CRECER TU DINERO</h3>
           <h5 class="light text-lighten-3 texth5">Aprende todo acerca de <BR>  la nueva economía Colaborativa y digital</h5>
-          <a class="waves-effect waves-light btn"><i class="material-icons left">book</i>inscribete</a>
+          <a class="waves-effect waves-light btn" href="#registrate"><i class="material-icons left">book</i>inscribete</a>
           <br><br>
         </div>
       </li>
@@ -161,7 +161,7 @@
         <div class="col l6 m12 s12  caption right-align overlay">
           <h3 class="texth3">CONTROLA<br> Y HAZ CRECER TU DINERO</h3>
           <h5 class="light text-lighten-3 texth5">Aprende todo acerca de <BR>  la nueva economía Colaborativa y digital</h5>
-          <a class="waves-effect waves-light btn"><i class="material-icons left">book</i>inscribete</a>
+          <a class="waves-effect waves-light btn" href="#registrate"><i class="material-icons left">book</i>inscribete</a>
           <br><br>
         </div>
       </li>
@@ -171,7 +171,7 @@
         <div class="col l6 m12 s12  caption right-align overlay">
           <h3 class="texth3">CONTROLA<br> Y HAZ CRECER TU DINERO</h3>
           <h5 class="light text-lighten-3 texth5">Aprende todo acerca de <BR>  la nueva economía Colaborativa y digital</h5>
-          <a class="waves-effect waves-light btn"><i class="material-icons left">book</i>inscribete</a>
+          <a class="waves-effect waves-light btn" href="#registrate"><i class="material-icons left">book</i>inscribete</a>
           <br><br>
         </div>
       </li>
@@ -296,6 +296,7 @@ Alt. 11 de Benavidess
   <script type="text/javascript">
     $(document).ready(function() {
         $('select').material_select();
+        $('.scrollspy').scrollSpy();
         $('.slider').slider({
           indicators: false,
           height: 600
