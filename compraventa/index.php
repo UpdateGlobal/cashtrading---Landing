@@ -147,26 +147,29 @@
     <ul class="slides">
       <li>
         <img src="img/slide1.1.jpg"> <!-- random image -->
-        <div class="caption right-align">
+        <div class="caption right-align overlay">
           <h3 class="texth3">COMPRA Y VENDE DE MANERA SEGURA</h3>
           <h5 class="light text-lighten-3 texth5">Con el respaldo de una empresa internacional</h5>
           <a class="waves-effect waves-light btn"><i class="material-icons left">phone</i>+51960604643</a>
+          <br><br>
         </div>
       </li>
          <li>
         <img src="img/slide2.2.jpg"> <!-- random image -->
-        <div class="caption right-align">
+        <div class="caption right-align overlay">
           <h3 class="texth3">PAGO EN EFECTIVO Y TRATO DIRECTO</h3>
           <h5 class="light text-lighten-3 texth5">Todas nuestras transacciónes son realizadas en nuestras oficinas</h5>
           <a class="waves-effect waves-light btn"><i class="material-icons left">phone</i>+51960604643</a>
+          <br><br>
         </div>
       </li>
           <li>
         <img src="img/slide3.3.jpg"> <!-- random image -->
-        <div class="caption right-align">
+        <div class="caption right-align overlay">
           <h3 class="texth3">LA COMISIÓN MÁS BAJA DEL MERCADO</h3>
           <h5 class="light text-lighten-3 texth5"></h5>
           <a class="waves-effect waves-light btn"><i class="material-icons left">phone</i>+51960604643</a>
+          <br><br>
         </div>
       </li>
     </ul>

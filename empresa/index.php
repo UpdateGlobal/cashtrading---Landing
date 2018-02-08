@@ -152,21 +152,21 @@
     <ul class="slides">
       <li>
         <img src="img/nego.jpg"> <!-- random image -->
-        <div class="caption right-align">
+        <div class="caption right-align overlay">
           <h3 class="thin" style="color: #8e24aa;">This is our big Tagline!</h3>
           <h5 class="light text-lighten-3" style="color: #8e24aa;">Here's our small slogan.</h5>
         </div>
       </li>
        <li>
         <img src="img/nego.jpg"> <!-- random image -->
-        <div class="caption right-align">
+        <div class="caption right-align overlay">
           <h3 class="thin" style="color: #8e24aa;">This is our big Tagline!</h3>
           <h5 class="light text-lighten-3" style="color: #8e24aa;">Here's our small slogan.</h5>
         </div>
       </li>
        <li>
         <img src="img/nego.jpg"> <!-- random image -->
-        <div class="caption right-align">
+        <div class="caption right-align overlay">
           <h3 class="thin" style="color: #8e24aa;">This is our big Tagline!</h3>
           <h5 class="light text-lighten-3" style="color: #8e24aa;">Here's our small slogan.</h5>
         </div>

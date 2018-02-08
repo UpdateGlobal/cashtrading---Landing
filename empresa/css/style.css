@@ -14,11 +14,17 @@
 }
 
 .texth3{
-	color: #8e24aa; 
+	color: #fff; 
 	font-weight: 300; 
 
 }
 
 .texth5{
-	color: #8e24aa; 
+	color: #fff; 
+}
+
+
+.overlay{
+
+background: rgba(22, 0, 0, 0.3)
 }

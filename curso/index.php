@@ -145,30 +145,34 @@
   
       <li>
         <img src="img/slide1.jpg"> <!-- random image -->
-        <div class="col l6 m12 s12  caption right-align">
+        <div class="col l6 m12 s12  caption right-align overlay">
+          <br>
           <div class="chip">Seminario Internacional de Economía Colaborativa</div>
           <h3 class="texth3">CONTROLA<br> Y HAZ CRECER TU DINERO</h3>
           <h5 class="light text-lighten-3 texth5">Aprende todo acerca de <BR>  la nueva economía Colaborativa y digital</h5>
           <a class="waves-effect waves-light btn"><i class="material-icons left">book</i>inscribete</a>
+          <br><br>
         </div>
       </li>
 
          
       <li>
         <img src="img/slide2.jpg"> <!-- random image -->
-        <div class="col l6 m12 s12  caption right-align">
+        <div class="col l6 m12 s12  caption right-align overlay">
           <h3 class="texth3">CONTROLA<br> Y HAZ CRECER TU DINERO</h3>
           <h5 class="light text-lighten-3 texth5">Aprende todo acerca de <BR>  la nueva economía Colaborativa y digital</h5>
           <a class="waves-effect waves-light btn"><i class="material-icons left">book</i>inscribete</a>
+          <br><br>
         </div>
       </li>
 
       <li>
         <img src="img/slide3.jpg"> <!-- random image -->
-        <div class="col l6 m12 s12  caption right-align ">
+        <div class="col l6 m12 s12  caption right-align overlay">
           <h3 class="texth3">CONTROLA<br> Y HAZ CRECER TU DINERO</h3>
           <h5 class="light text-lighten-3 texth5">Aprende todo acerca de <BR>  la nueva economía Colaborativa y digital</h5>
           <a class="waves-effect waves-light btn"><i class="material-icons left">book</i>inscribete</a>
+          <br><br>
         </div>
       </li>
     </ul>
@@ -268,7 +272,7 @@
                 <p class="grey-text text-lighten-4">Cash Trading International</p>
               </div>
               <div class="col l4 offset-l2 s12">
-                          <img src="img/logo.png" style="margin-top: 13px;" class="responsive-img" >
+              <img src="img/logo.png" style="margin-top: 13px;" class="responsive-img" >
 
         
               </div>
@@ -282,7 +286,7 @@ Alt. 11 de Benavidess
    © 2018 Copyright Cash Trading International</a>
             </div>
           </div>
-        </footer
+        </footer>
 
 
   <!--  Scripts-->
