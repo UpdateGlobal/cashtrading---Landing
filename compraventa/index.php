@@ -215,7 +215,7 @@
 
 
 
-<div class="" style="background-color: #2f1448;" id="registrate">
+<div class="" style="background-color: #2f1448;" >
   <div class="row container vertical">
     <div class="col l6 m6 white-text" style="padding-top: 11%;">
       <!---hola aqui no sabia que hace-->
@@ -228,7 +228,7 @@
                 <input  id="first_name" type="text" class="validate" required name="nombre" id="nombre">
                 <label for="first_name" class="thin white-text" >Ingresa Nombre y Apellido  </label>
               </div>
-              <div class="input-field col s6">
+              <div class="input-field col s6 scrollspy" id="registrate">
                 <input  id="first_name" type="text" class="validate" required name="telefono" id="telefono">
                 <label for="first_name" class="thin white-text">Danos tu Teléfono</label>
 
@@ -294,6 +294,7 @@ Alt. 11 de Benavidess
   <script type="text/javascript">
     $(document).ready(function() {
         $('select').material_select();
+        $('.scrollspy').scrollSpy();
         $('.slider').slider({
           indicators: false,
           height: 600

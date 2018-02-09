@@ -217,20 +217,20 @@
 
 
 
-<div class="" style="background-color: #2f1448;" id="registrate">
+<div class="" style="background-color: #2f1448;" id="">
   <div class="row container vertical">
     <div class="col l6 m6 white-text" style="padding-top: 11%;">
       <!---hola aqui no sabia que hace-->
       <h3 class="thin">Registrate<p style="font-size: 10px;">Un asesor especializado se comunicará contigo</p></h3>
     </div>
-    <div class="col l6 m6 white-text" style="padding-bottom: 12%; padding-top: 12%;">
+    <div class="col l6 m6 white-text" style="padding-bottom: 12%; padding-top: 12%;" >
          <form class="col s12" action="index.php" method="POST">
             <div class="row">
               <div class="input-field col s6">
                 <input  id="first_name" type="text" class="validate" required name="nombre" id="nombre">
                 <label for="first_name" class="thin white-text" >Ingresa Nombre y Apellido  </label>
               </div>
-              <div class="input-field col s6">
+              <div class="input-field col s6 scrollspy" id="registrate">
                 <input  id="first_name" type="text" class="validate" required name="telefono" id="telefono">
                 <label for="first_name" class="thin white-text">Danos tu Teléfono</label>
 
@@ -297,6 +297,7 @@ Alt. 11 de Benavidess
     $(document).ready(function() {
         $('select').material_select();
         $('.scrollspy').scrollSpy();
+
         $('.slider').slider({
           indicators: false,
           height: 600
